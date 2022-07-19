@@ -4,6 +4,7 @@ use crate::Verifier as VerifierTrait;
 
 use bytes::Bytes;
 use ed25519_dalek::{Keypair, Signer, Verifier, PUBLIC_KEY_LENGTH, SIGNATURE_LENGTH};
+use ed25519_dalek::ed25519::signature::Signature;
 
 pub struct Ed25519Signer {
     keypair: Keypair,
