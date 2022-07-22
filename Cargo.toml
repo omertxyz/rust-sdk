@@ -29,7 +29,7 @@ primitive-types = "0.11.1"
 rand = "0.8"
 reqwest = "0.11.11"
 ring = "0.16.20"
-rsa = "0.6.1"
+rsa = "0.4"
 secp256k1 = { version = "0.22.1", optional = true, features = [ "recovery" ] }
 serde = "1.0.136"
 serde_json = "1.0.79"
