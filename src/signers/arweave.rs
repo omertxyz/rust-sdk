@@ -18,11 +18,11 @@ pub struct ArweaveSigner {
 
 #[allow(unused)]
 impl ArweaveSigner {
-    fn new(priv_key: RsaPrivateKey) -> ArweaveSigner {
+    pub fn new(priv_key: RsaPrivateKey) -> ArweaveSigner {
         Self { priv_key }
     }
 
-    fn from_jwk(jwk: jwk::JsonWebKey) -> ArweaveSigner {
+    pub fn from_jwk(jwk: jwk::JsonWebKey) -> ArweaveSigner {
         let pem = jwk.key.to_pem();
         let priv_key = RsaPrivateKey::from_pkcs8_pem(&pem).unwrap();
 
