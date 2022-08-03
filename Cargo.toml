@@ -20,7 +20,7 @@ derive_builder = "0.9"
 derive_more = "0.99.3"
 ed25519-dalek = { version = "1.0.1", optional = true }
 futures = "0.3.13"
-jsonwebkey = { version = "0.3.4", features = [ "pkcs-convert" ] }
+jsonwebkey = { version = "0.3.2", features = [ "pkcs-convert" ] }
 lazy_static = "1.4.0"
 num-derive = "0.3.3"
 num-traits = "0.2"
